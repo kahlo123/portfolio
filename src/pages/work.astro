@@ -24,15 +24,6 @@ const projects = (await getCollection('work')).sort(
 				tagline="Voici mes projets les plus récents pour vous faire une idée de mon expérience passée."
 				align="start"
 			/>
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid>
 		</main>
 		<ContactCTA />
 	</div>

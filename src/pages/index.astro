@@ -43,14 +43,12 @@ const projects = (await getCollection('work'))
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Kyle AH-LO Développeur Web"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/portrait-kyle1.jpg"
 				/>
 			</header>
-
-			<Skills />
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
@@ -59,18 +57,6 @@ const projects = (await getCollection('work'))
 					<h3>Mes projets</h3>
 					<p>Découvrez ci-dessous quelques-uns des projets auxquels j'ai contribué ces dernières années.</p>
 				</header>
-
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
 
 				<div class="cta">
 					<CallToAction href="/work/">
